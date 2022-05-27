@@ -1,0 +1,430 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		87118DDD283F2CC1008C3EFD /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87118DDC283F2CC1008C3EFD /* Common.swift */; };
+		87118DDF283F33B8008C3EFD /* PostFXRenderPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87118DDE283F33B8008C3EFD /* PostFXRenderPass.swift */; };
+		875C5214283E20CF00F4E004 /* SceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875C5213283E20CF00F4E004 /* SceneView.swift */; };
+		875C5216283E254C00F4E004 /* PostFXShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 875C5215283E254C00F4E004 /* PostFXShaders.metal */; };
+		875C5218283E575700F4E004 /* BackgroundShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 875C5217283E575700F4E004 /* BackgroundShaders.metal */; };
+		875C521C283F289C00F4E004 /* BackgroundRenderPass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875C521B283F289C00F4E004 /* BackgroundRenderPass.swift */; };
+		FA037717283D22F500EDBEEA /* GeometryRenderers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA037716283D22F500EDBEEA /* GeometryRenderers.swift */; };
+		FA037719283D24EB00EDBEEA /* RenderContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA037718283D24EB00EDBEEA /* RenderContext.swift */; };
+		FA037720283D33F900EDBEEA /* GeometryShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = FA03771F283D33F900EDBEEA /* GeometryShaders.metal */; };
+		FA037722283D35E800EDBEEA /* SceneRenderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA037721283D35E800EDBEEA /* SceneRenderer.swift */; };
+		FA6D3BED283D1EF100C0055F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D3BEC283D1EF100C0055F /* AppDelegate.swift */; };
+		FA6D3BEF283D1EF100C0055F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D3BEE283D1EF100C0055F /* ViewController.swift */; };
+		FA6D3BF1283D1EF600C0055F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA6D3BF0283D1EF600C0055F /* Assets.xcassets */; };
+		FA6D3BF4283D1EF600C0055F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA6D3BF2283D1EF600C0055F /* Main.storyboard */; };
+		FA6D3BFC283D1FC400C0055F /* SIMD+MatrixUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6D3BFB283D1FC400C0055F /* SIMD+MatrixUtils.swift */; };
+		FAAE056B2840FBF700F8464D /* linkstart_sfx.m4a in Resources */ = {isa = PBXBuildFile; fileRef = FAAE056A2840FBF700F8464D /* linkstart_sfx.m4a */; };
+		FAAE056E2840FCF900F8464D /* AVFAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAAE056D2840FCF900F8464D /* AVFAudio.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		87118DDC283F2CC1008C3EFD /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		87118DDE283F33B8008C3EFD /* PostFXRenderPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFXRenderPass.swift; sourceTree = "<group>"; };
+		875C5213283E20CF00F4E004 /* SceneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneView.swift; sourceTree = "<group>"; };
+		875C5215283E254C00F4E004 /* PostFXShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = PostFXShaders.metal; sourceTree = "<group>"; };
+		875C5217283E575700F4E004 /* BackgroundShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BackgroundShaders.metal; sourceTree = "<group>"; };
+		875C521B283F289C00F4E004 /* BackgroundRenderPass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundRenderPass.swift; sourceTree = "<group>"; };
+		FA037716283D22F500EDBEEA /* GeometryRenderers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeometryRenderers.swift; sourceTree = "<group>"; };
+		FA037718283D24EB00EDBEEA /* RenderContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderContext.swift; sourceTree = "<group>"; };
+		FA03771A283D269800EDBEEA /* RenderTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RenderTypes.h; sourceTree = "<group>"; };
+		FA03771B283D26A600EDBEEA /* SAOLinkStart-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SAOLinkStart-Bridging-Header.h"; sourceTree = "<group>"; };
+		FA03771F283D33F900EDBEEA /* GeometryShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = GeometryShaders.metal; sourceTree = "<group>"; };
+		FA037721283D35E800EDBEEA /* SceneRenderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneRenderer.swift; sourceTree = "<group>"; };
+		FA6D3BE9283D1EF100C0055F /* SAOLinkStart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAOLinkStart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA6D3BEC283D1EF100C0055F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA6D3BEE283D1EF100C0055F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FA6D3BF0283D1EF600C0055F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA6D3BF3283D1EF600C0055F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA6D3BF5283D1EF600C0055F /* SAOLinkStart.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SAOLinkStart.entitlements; sourceTree = "<group>"; };
+		FA6D3BFB283D1FC400C0055F /* SIMD+MatrixUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SIMD+MatrixUtils.swift"; sourceTree = "<group>"; };
+		FAAE056A2840FBF700F8464D /* linkstart_sfx.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = linkstart_sfx.m4a; sourceTree = "<group>"; };
+		FAAE056D2840FCF900F8464D /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
+		FAAE056F284108E800F8464D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA6D3BE6283D1EF100C0055F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE056E2840FCF900F8464D /* AVFAudio.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		875C5219283F208700F4E004 /* RenderPasses */ = {
+			isa = PBXGroup;
+			children = (
+				87118DDC283F2CC1008C3EFD /* Common.swift */,
+				875C521B283F289C00F4E004 /* BackgroundRenderPass.swift */,
+				87118DDE283F33B8008C3EFD /* PostFXRenderPass.swift */,
+				875C5217283E575700F4E004 /* BackgroundShaders.metal */,
+				875C5215283E254C00F4E004 /* PostFXShaders.metal */,
+			);
+			path = RenderPasses;
+			sourceTree = "<group>";
+		};
+		875C521A283F221600F4E004 /* Engine */ = {
+			isa = PBXGroup;
+			children = (
+				FA037718283D24EB00EDBEEA /* RenderContext.swift */,
+				FA037721283D35E800EDBEEA /* SceneRenderer.swift */,
+				875C5213283E20CF00F4E004 /* SceneView.swift */,
+				FA037716283D22F500EDBEEA /* GeometryRenderers.swift */,
+				FA6D3BFB283D1FC400C0055F /* SIMD+MatrixUtils.swift */,
+				FA03771F283D33F900EDBEEA /* GeometryShaders.metal */,
+			);
+			path = Engine;
+			sourceTree = "<group>";
+		};
+		FA6D3BE0283D1EF100C0055F = {
+			isa = PBXGroup;
+			children = (
+				FAAE056F284108E800F8464D /* README.md */,
+				FA6D3BEB283D1EF100C0055F /* SAOLinkStart */,
+				FA6D3BEA283D1EF100C0055F /* Products */,
+				FAAE056C2840FCF900F8464D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA6D3BEA283D1EF100C0055F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA6D3BE9283D1EF100C0055F /* SAOLinkStart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA6D3BEB283D1EF100C0055F /* SAOLinkStart */ = {
+			isa = PBXGroup;
+			children = (
+				875C521A283F221600F4E004 /* Engine */,
+				875C5219283F208700F4E004 /* RenderPasses */,
+				FA6D3BEC283D1EF100C0055F /* AppDelegate.swift */,
+				FA6D3BEE283D1EF100C0055F /* ViewController.swift */,
+				FA03771A283D269800EDBEEA /* RenderTypes.h */,
+				FA03771B283D26A600EDBEEA /* SAOLinkStart-Bridging-Header.h */,
+				FA6D3BF0283D1EF600C0055F /* Assets.xcassets */,
+				FA6D3BF2283D1EF600C0055F /* Main.storyboard */,
+				FA6D3BF5283D1EF600C0055F /* SAOLinkStart.entitlements */,
+				FAAE056A2840FBF700F8464D /* linkstart_sfx.m4a */,
+			);
+			path = SAOLinkStart;
+			sourceTree = "<group>";
+		};
+		FAAE056C2840FCF900F8464D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FAAE056D2840FCF900F8464D /* AVFAudio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA6D3BE8283D1EF100C0055F /* SAOLinkStart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA6D3BF8283D1EF600C0055F /* Build configuration list for PBXNativeTarget "SAOLinkStart" */;
+			buildPhases = (
+				FA6D3BE5283D1EF100C0055F /* Sources */,
+				FA6D3BE6283D1EF100C0055F /* Frameworks */,
+				FA6D3BE7283D1EF100C0055F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SAOLinkStart;
+			productName = SAOLinkStart;
+			productReference = FA6D3BE9283D1EF100C0055F /* SAOLinkStart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA6D3BE1283D1EF100C0055F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					FA6D3BE8283D1EF100C0055F = {
+						CreatedOnToolsVersion = 13.3;
+						LastSwiftMigration = 1330;
+					};
+				};
+			};
+			buildConfigurationList = FA6D3BE4283D1EF100C0055F /* Build configuration list for PBXProject "SAOLinkStart" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA6D3BE0283D1EF100C0055F;
+			productRefGroup = FA6D3BEA283D1EF100C0055F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA6D3BE8283D1EF100C0055F /* SAOLinkStart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA6D3BE7283D1EF100C0055F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA6D3BF1283D1EF600C0055F /* Assets.xcassets in Resources */,
+				FAAE056B2840FBF700F8464D /* linkstart_sfx.m4a in Resources */,
+				FA6D3BF4283D1EF600C0055F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA6D3BE5283D1EF100C0055F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87118DDF283F33B8008C3EFD /* PostFXRenderPass.swift in Sources */,
+				875C5218283E575700F4E004 /* BackgroundShaders.metal in Sources */,
+				875C521C283F289C00F4E004 /* BackgroundRenderPass.swift in Sources */,
+				FA6D3BEF283D1EF100C0055F /* ViewController.swift in Sources */,
+				FA037722283D35E800EDBEEA /* SceneRenderer.swift in Sources */,
+				87118DDD283F2CC1008C3EFD /* Common.swift in Sources */,
+				FA6D3BED283D1EF100C0055F /* AppDelegate.swift in Sources */,
+				875C5216283E254C00F4E004 /* PostFXShaders.metal in Sources */,
+				875C5214283E20CF00F4E004 /* SceneView.swift in Sources */,
+				FA037720283D33F900EDBEEA /* GeometryShaders.metal in Sources */,
+				FA037719283D24EB00EDBEEA /* RenderContext.swift in Sources */,
+				FA6D3BFC283D1FC400C0055F /* SIMD+MatrixUtils.swift in Sources */,
+				FA037717283D22F500EDBEEA /* GeometryRenderers.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA6D3BF2283D1EF600C0055F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA6D3BF3283D1EF600C0055F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA6D3BF6283D1EF600C0055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA6D3BF7283D1EF600C0055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		FA6D3BF9283D1EF600C0055F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAOLinkStart/SAOLinkStart.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.cyandev.SAOLinkStart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SAOLinkStart/SAOLinkStart-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		FA6D3BFA283D1EF600C0055F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = SAOLinkStart/SAOLinkStart.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.cyandev.SAOLinkStart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "SAOLinkStart/SAOLinkStart-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA6D3BE4283D1EF100C0055F /* Build configuration list for PBXProject "SAOLinkStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6D3BF6283D1EF600C0055F /* Debug */,
+				FA6D3BF7283D1EF600C0055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA6D3BF8283D1EF600C0055F /* Build configuration list for PBXNativeTarget "SAOLinkStart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA6D3BF9283D1EF600C0055F /* Debug */,
+				FA6D3BFA283D1EF600C0055F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA6D3BE1283D1EF100C0055F /* Project object */;
+}
